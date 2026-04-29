@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
-import smartersLogo from './assets/smarters simples txt preto.png';
-import smartersMonoLogo from './assets/smarters simples mono preto.png';
-import dEngageLogo from './assets/D·engage Logo (Blue & Black).png';
-import dashLogo from './assets/20Dash_Logo_RGB_Versão 1.png';
-import eventLogo from './assets/Nome evento.png';
-import metaLogo from './assets/Logo meta_.png';
+import smartersLogo from './assets/smarters-txt.png';
+import smartersMonoLogo from './assets/smarters-mono.png';
+import dEngageLogo from './assets/dengage-logo.png';
+import dashLogo from './assets/20dash-logo.png';
+import eventLogo from './assets/nome-evento.png';
+import metaLogo from './assets/meta-logo.png';
 import './App.css';
 
 function App() {
