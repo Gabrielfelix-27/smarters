@@ -129,7 +129,7 @@ function App() {
           <img src={smartersMonoLogo} alt="Smarters" className="footer-logo" />
           <p>Transformando conversas em resultados através de agentes de IA conversacionais</p>
           <div className="social-links">
-            <a href="https://instagram.com/smarters.ai" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/smarte.rs/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
             </a>
             <a href="https://linkedin.com/company/smarters" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
