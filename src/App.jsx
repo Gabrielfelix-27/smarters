@@ -35,7 +35,7 @@ function App() {
   }, []);
 
   const handleRegistration = () => {
-    window.open('https://forms.google.com', '_blank');
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSc2Y_ksbJGTS2OvYqTNU_LPTmp11n57f-jw1gbaw9t2d4empQ/viewform', '_blank');
   };
 
   return (
