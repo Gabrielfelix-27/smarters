@@ -500,21 +500,22 @@
 
 @media (max-width: 600px) {
   .top-navbar {
-    top: 1rem;
-    padding: 0.6rem;
-    width: 95%;
+    top: 1.5rem;
+    padding: 0.4rem 1.2rem;
+    width: max-content;
+    max-width: 95%;
   }
 
   .partners-logos {
-    gap: 0.5rem;
+    gap: 0.8rem;
   }
 
   .partner-img {
-    height: 14px;
+    height: 13px;
   }
 
   .dash-img {
-    height: 28px;
+    height: 25px;
   }
 
   .word-whatsapp,
