@@ -6,10 +6,12 @@ import dEngageLogo from './assets/dengage-logo.png';
 import dashLogo from './assets/20dash-logo.png';
 import eventLogo from './assets/nome-evento.png';
 import metaLogo from './assets/meta-logo.png';
+import RegistrationModal from './components/RegistrationModal';
 import './App.css';
 
 function App() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     // 19 de Maio de 2026, 13:30
@@ -35,7 +37,7 @@ function App() {
   }, []);
 
   const handleRegistration = () => {
-    window.open('https://docs.google.com/forms/d/e/1FAIpQLSc2Y_ksbJGTS2OvYqTNU_LPTmp11n57f-jw1gbaw9t2d4empQ/viewform', '_blank');
+    setIsModalOpen(true);
   };
 
   return (
@@ -71,6 +73,7 @@ function App() {
           <div className="main-logo animate-fade-up delay-1">
             <span className="word-whatsapp">WhatsApp</span>
             <span className="word-toolbox">Toolbox.</span>
+            <p className="main-subtitle">Da IA criativa ao engajamento omnicanal</p>
           </div>
 
           <div className="bubbles-container animate-fade-up delay-2">
@@ -78,7 +81,7 @@ function App() {
               SÃO PAULO
             </div>
             <div className="bubble bubble-light bubble-right">
-              19 DE MAIO | 13:30
+              19 DE MAIO | DAS 9H ÀS 13H30
             </div>
             <div className="bubble bubble-dark bubble-left meta-bubble">
               <img src={metaLogo} alt="Meta" className="meta-icon" />
@@ -91,7 +94,7 @@ function App() {
         <div className="right-pane">
           <div className="cta-card animate-fade-up delay-3">
             <h2>Confirme sua presença</h2>
-            <p>Confirme sua presença no principal evento sobre a Nova Internet dos Agentes.</p>
+            <p>Participe do principal evento sobre a jornada da IA criativa ao engajamento omnicanal.</p>
 
             <button onClick={handleRegistration} className="cta-btn">
               Confirmar <ArrowRight size={20} />
@@ -127,7 +130,7 @@ function App() {
       <footer className="site-footer">
         <div className="footer-content animate-fade-up delay-4">
           <img src={smartersMonoLogo} alt="Smarters" className="footer-logo" />
-          <p>Transformando conversas em resultados através de agentes de IA conversacionais</p>
+          <p>AI Agents for Conversational Marketing.</p>
           <div className="social-links">
             <a href="https://www.instagram.com/smarte.rs/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
@@ -138,6 +141,11 @@ function App() {
           </div>
         </div>
       </footer>
+
+      <RegistrationModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </>
   );
 }
