@@ -185,7 +185,7 @@
   display: flex;
   flex-direction: column;
   line-height: 0.95;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   letter-spacing: -2px;
@@ -257,10 +257,10 @@
 }
 
 .bubbles-container {
-  margin-top: 4rem;
+  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.2rem;
   width: 100%;
   max-width: 580px;
   margin-left: 2rem;
