@@ -9,10 +9,10 @@
 /* BACKGROUND MESH */
 .bg-mesh-container {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  top: -25vh;
+  left: -25vw;
+  width: 150vw;
+  height: 150vh;
   overflow: hidden;
   z-index: 0;
   background-color: #f2f5fc;
@@ -175,7 +175,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 9rem 8% 4rem;
+  padding: 12rem 8% 4rem;
   /* Increased top padding so it doesn't overlap navbar */
   position: relative;
   z-index: 1;
@@ -349,7 +349,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 5%;
+  padding: 7rem 5% 4rem;
   position: relative;
   z-index: 1;
 }

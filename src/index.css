@@ -28,9 +28,10 @@ body {
   color: var(--text-main);
   background: var(--bg-gradient-start);
   background: linear-gradient(135deg, var(--bg-gradient-end) 0%, var(--bg-gradient-start) 100%);
-  min-height: 100vh;
+  min-height: 115vh;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  zoom: 0.9;
 }
 
 /* Wavy background effect */
