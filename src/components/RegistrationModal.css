@@ -100,6 +100,7 @@
   border-radius: 8px;
   font-size: 0.95rem;
   color: #333;
+  background-color: #ffffff;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   font-family: inherit;
 }
@@ -120,6 +121,7 @@ textarea.form-input {
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
+  background-color: #ffffff;
 }
 
 .whatsapp-input-group:focus-within {
@@ -145,6 +147,7 @@ textarea.form-input {
   font-size: 0.95rem;
   color: #333;
   outline: none;
+  background-color: transparent;
 }
 
 .checkbox-group {
